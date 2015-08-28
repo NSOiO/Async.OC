@@ -1,4 +1,6 @@
 # Async.OC
+[![](http://img.shields.io/badge/OS%20X-10.10%2B-blue.svg)]() [![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]() 
+
 Rewrite [Async](https://github.com/duemunk/Async) by Objective-C
 
 **Async** sugar looks like this:
