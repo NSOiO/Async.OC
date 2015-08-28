@@ -29,7 +29,7 @@ static NSString* qd(qos_class_t qt);
     */
     
     // Regular GCD
-    /*
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         NSLog(@"A: This is run on the background");
         
@@ -37,7 +37,7 @@ static NSString* qd(qos_class_t qt);
             NSLog(@"B: This is run on the , after the previous block");
         });
     });
-    */
+    
     /*
     // chaining with Async
     __block NSInteger cnt = 0;
