@@ -1,7 +1,9 @@
 # Async.OC
 [![](http://img.shields.io/badge/OS%20X-10.10%2B-blue.svg)]() [![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]() 
 
-Rewrite [Async](https://github.com/duemunk/Async) by Objective-C.For support of iOS 7 and OS X 10.9 check out [Async.legacy.OC](https://github.com/NSOiO/Async.legacy.OC).
+Rewrite [Async](https://github.com/duemunk/Async) by Objective-C.
+
+For support of iOS 7 and OS X 10.9 check out [Async.legacy.OC](https://github.com/NSOiO/Async.legacy.OC).
 
 **Async** sugar looks like this:
 ```obj-c
