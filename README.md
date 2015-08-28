@@ -1,2 +1,2 @@
 # Async.OC
-Syntactic sugar in Objective-C for asynchronous dispatches in Grand Central Dispatch
+Rewrite [Async](https://github.com/duemunk/Async) by Objective-OC
