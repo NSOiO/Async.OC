@@ -1,2 +1,2 @@
 # Async.OC
-Rewrite [Async](https://github.com/duemunk/Async) by Objective-OC
+Rewrite [Async](https://github.com/duemunk/Async) by Objective-C
