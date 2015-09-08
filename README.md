@@ -13,31 +13,6 @@ Async.background(^{
     NSLog(@"B: This is run on the , after the previous block");
 });
 ```
-
-## Things you can do
-
-Supports the modern queue classes:
-```obj-c
-Async.main {}
-Async.userInteractive {}
-Async.userInitiated {}
-Async.utility {}
-Async.background {}
-```
-
-Chain as many blocks as you want:
-```obj-c
-Async.userInitiated {
-    // 1
-}.main {
-    // 2
-}.background {
-    // 3
-}.main {
-    // 4
-}
-```
-
 Instead of the familiar syntax for GCD:
 ```obj-c
 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
@@ -47,6 +22,29 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
         NSLog(@"B: This is run on the , after the previous block");
     });
 });
+```
+## Things you can do
+
+Supports the modern queue classes:
+```obj-c
+Async.main (^{})
+Async.userInteractive (^{})
+Async.userInitiated (^{})
+Async.utility (^{})
+Async.background (^{})
+```
+
+Chain as many blocks as you want:
+```obj-c
+Async.userInitiated (^{
+    // 1
+}).main (^{
+    // 2
+}).background (^{
+    // 3
+}).main (^{
+    // 4
+})
 ```
 
 Instend of `dispatch_after
